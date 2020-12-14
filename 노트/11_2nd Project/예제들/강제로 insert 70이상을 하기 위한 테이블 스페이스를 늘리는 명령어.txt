@@ -1,0 +1,6 @@
+-- 강제 insert 70이상을 위하여
+alter system set processes=500 scope=spfile;
+shutdown immediate;
+startup;
+
+-- 위의 명령 수행 후 오라클 재부팅
